@@ -13,19 +13,21 @@
         <div class="header-rigth-container">
             <nav class="header-navbar">
                 <ul class="header-navbar__content">
-                    <li class="header-navbar__content-item"><a href="#" class="header-navbar__content-item-ref">Sobre mí</a></li>
-                    <li class="header-navbar__content-item"><a href="#" class="header-navbar__content-item-ref">Skills</a></li>
-                    <li class="header-navbar__content-item"><a href="#" class="header-navbar__content-item-ref">Formación</a></li>
-                    <li class="header-navbar__content-item"><a href="#" class="header-navbar__content-item-ref">Hobbies</a></li>
-                    <li class="header-navbar__content-item"><a href="#" class="header-navbar__content-item-ref">Proyectos</a></li>
+                    <li class="header-navbar__content-item"><a href="#home" class="header-navbar__content-item-ref" title="Inio"></a></li>                    
+                    <li class="header-navbar__content-item"><a href="#aboutme" class="header-navbar__content-item-ref">Sobre mí</a></li>
+                    <li class="header-navbar__content-item"><a href="#skills" class="header-navbar__content-item-ref">Skills</a></li>
+                    <li class="header-navbar__content-item"><a href="#hobbies" class="header-navbar__content-item-ref">Hobbies</a></li>
+                    <li class="header-navbar__content-item"><a href="#education" class="header-navbar__content-item-ref">Formación</a></li>
+                    <li class="header-navbar__content-item"><a href="#projects" class="header-navbar__content-item-ref">Proyectos</a></li>
                 </ul>
             </nav>
             <span class="header-rigth-container__separator">|</span>
+            <button class="header-rigth-container__btn-theme" title="Cambia de tema" type="button"></button>
             <input type="button" value="Conoce mi CV" class="header-rigth-container__btn btn-main" title="Desplegar CV">
         </div>
     </header>
     <main class="main">
-        <section class="main-header">
+        <section class="main-header" id="home">
             <div class="main-header__title">
                 <h1 class="main-header__title-typed">
                     <span class="typed"></span>
@@ -37,14 +39,76 @@
                     <p>Fronted Developer </p>
                 </div>
             </div>
-            <p class="main-header__parraf">Sí, mi nombre es <strong>Juan Mosquera</strong> y tienes toda esta página para conocer un poco más sobre mí, mi formación, mis hobbies y más, aún así te dejo un botón por si quieres saltarte estos pasos y contactarme.</p>
+            <p class="main-header__parraf">Sí, como viste, mi nombre es <strong>Juan Mosquera</strong> y tienes toda esta página para conocer un poco más acerca de mí, mi formación, mis hobbies y proyectos, aún así, si lo que es quieres es contactarme te dejo un botón para que puedas hacerlo.</p>
             <button type="button" class="main-header__btn btn-main" title="Ir a contactar">Presiona aquí</button>
+        </section>
+        <section class="main-aboutme" id="aboutme">
+            <div>
+                <h2 class="main-aboutme__title">Sobre mí</h2>
+                <p class="main-aboutme__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tenetur unde expedita vitae ad nam fuga, in amet labore quis. Tempora itaque quo, quos perferendis ab sunt animi aliquam saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veritatis perferendis magnam, sunt corporis error eligendi sequi pariatur quos animi!
+                </p>
+                <p class="main-aboutme__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, magnam! Nihil modi libero corrupti vitae eaque! Quod, sit. A ratione neque quo error vitae iste aspernatur fuga vel dolor quis, laboriosam voluptates harum. Nobis aspernatur laboriosam ratione quod amet provident.
+                </p>
+            </div>
+        </section>
+        <section class="main-skills-hobbies">
+            <article class="main-skills" id="skills">
+                <h2 class="main-skills__title">Skills</h2>
+                <div class="main-skills__content">
+                    <figure class="main-skills__content-card">
+                        <img src="./assets/img/html5.svg" alt="skill" class="main-skills__content-card-img">
+                        <figcaption class="main-skills__content-card-caption">HTML 5</figcaption>
+                    </figure>
+                    <figure class="main-skills__content-card">
+                        <img src="./assets/img/css3.svg" alt="skill" class="main-skills__content-card-img">
+                        <figcaption class="main-skills__content-card-caption">CSS</figcaption>
+                    </figure>
+                    <figure class="main-skills__content-card">
+                        <img src="./assets/img/potion.svg" alt="skill" class="main-skills__content-card-img">
+                        <figcaption class="main-skills__content-card-caption">SASS</figcaption>
+                    </figure>
+                    <figure class="main-skills__content-card">
+                        <img src="./assets/img/view-grid.svg" alt="skill" class="main-skills__content-card-img">
+                        <figcaption class="main-skills__content-card-caption">Bootstrap</figcaption>
+                    </figure>
+                    <figure class="main-skills__content-card">
+                        <img src="./assets/img/shopping-code-check.svg" alt="skill" class="main-skills__content-card-img">
+                        <figcaption class="main-skills__content-card-caption">Javascript</figcaption>
+                    </figure>
+                    <figure class="main-skills__content-card">
+                        <img src="./assets/img/3d-bridge.svg" alt="skill" class="main-skills__content-card-img">
+                        <figcaption class="main-skills__content-card-caption">Python</figcaption>
+                    </figure>                
+            </div>
+        </article>
+        <article class="main-hobbies" id="hobbies">
+            <h2 class="main-hobbies__title">Hobbies</h2>
+            <div class="main-hobbies__content">
+                <figure class="main-hobbies__content-card">
+                    <img src="./assets/img/album-open.svg" alt="hobbie" class="main-hobbies__content-card-img">
+                    <figcaption class="main-hobbies__content-card-caption">Música</figcaption>
+                </figure>
+                <figure class="main-hobbies__content-card">
+                    <img src="./assets/img/palette.svg" alt="hobbie" class="main-hobbies__content-card-img">
+                    <figcaption class="main-hobbies__content-card-caption">Diseño Gráfico</figcaption>
+                </figure>
+                <figure class="main-hobbies__content-card">
+                    <img src="./assets/img/soccer-ball.svg" alt="hobbie" class="main-hobbies__content-card-img">
+                    <figcaption class="main-hobbies__content-card-caption">Fútbol</figcaption>
+                </figure>
+                <figure class="main-hobbies__content-card">
+                    <img src="./assets/img/tv.svg" alt="hobbie" class="main-hobbies__content-card-img">
+                    <figcaption class="main-hobbies__content-card-caption">Ver series</figcaption>
+                </figure>
+        </div>
+        </article>
         </section>
     </main>
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./assets/js/vendor/typed.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
