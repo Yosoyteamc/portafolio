@@ -6,6 +6,120 @@ $button-blue: hsl(200, 98%, 40%);
 
 $font-family: 'Rubik', sans-serif;
 $font-gray:hsl(216, 2%, 58%);
+$font-nav:hsl(206, 31%, 45%);
 $font-black: hsl(240, 33%, 1%);
 $font-green:hsl(142, 70%, 45%);
+$font-white:hsl(225, 67%, 98%);
 
+body{
+    font-family: $font-family;
+}
+
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    margin: auto;
+    padding: 23.5px;
+    width: 1164px;
+    &-logo{
+        &__img{
+            width: 38px;
+        }
+    }
+    &-navbar{
+        &__content{
+            display: flex;
+            &-item{
+                padding: 0 15px;
+                &-ref{
+                    text-decoration: none;
+                    color: $font-nav;
+                    &:hover{
+                        color: $button-blue;
+                    }
+                }
+            }
+        }
+    }
+    &-rigth-container{
+        display: flex;
+        align-items: center;
+        &__separator{
+            padding: 0 20px;
+            font-weight: 300;
+            font-size: 20px;
+            color: $font-gray;
+            margin-top: -2px;
+        }
+        &__btn{
+            height: 38px;
+        }
+    }
+}
+
+.ref--active, .header-navbar__content-item-ref:active{
+    color: $button-blue;
+    font-weight: 500;
+}
+
+
+.btn-main{
+    background-color: $button-blue;
+    border: none;
+    font-size: 16px;
+    min-height: 38px;
+    border-radius: 50px;
+    color: $font-white;
+    font-family: $font-family;
+    font-weight: 500;            
+    padding: 0 20px;
+    &:hover{
+        cursor: pointer;
+        background-color: $font-green;
+        transition: all .3 ease-in-out;
+    }
+}
+
+.main{
+    &-header{
+        align-items: center;
+        background-color: $background-gray;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 280px);
+        margin: auto;
+        max-height: 450px;
+        padding: 38px;
+        width: 1134px;
+        &__title{
+            height: 160px;
+            padding-bottom: 30px;
+            text-align: center;
+            width: 550px;
+            &-typed{
+                color: $font-black;
+                font-weight: 700;
+                font-size: 80px;
+            }
+        }
+        &__parraf{
+            line-height: 1.5rem;
+            padding-bottom: 20px;
+            text-align: center;
+            width: 650px;
+            font-size: 16px;
+            strong{
+                font-weight: bold;
+            }
+        }
+        &__btn{
+            height: 48px;
+            font-size: 18px;
+            padding: 0 25px;
+        }
+    }
+}
