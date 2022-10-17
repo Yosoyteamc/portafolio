@@ -9,21 +9,24 @@
 </head>
 <body>
     <header class="header">
-        <figure class="header-logo"><img src="https://seeklogo.com/images/G/google-developers-logo-F8BF3155AC-seeklogo.com.png" alt="Logo Juan Mosquera" class="header-logo__img"></figure>
-        <div class="header-rigth-container">
-            <nav class="header-navbar">
-                <ul class="header-navbar__content">
-                    <li class="header-navbar__content-item"><a href="#home" class="header-navbar__content-item-ref" title="Inio"></a></li>                    
-                    <li class="header-navbar__content-item"><a href="#aboutme" class="header-navbar__content-item-ref">Sobre mí</a></li>
-                    <li class="header-navbar__content-item"><a href="#skills" class="header-navbar__content-item-ref">Skills</a></li>
-                    <li class="header-navbar__content-item"><a href="#hobbies" class="header-navbar__content-item-ref">Hobbies</a></li>
-                    <li class="header-navbar__content-item"><a href="#education" class="header-navbar__content-item-ref">Formación</a></li>
-                    <li class="header-navbar__content-item"><a href="#projects" class="header-navbar__content-item-ref">Proyectos</a></li>
-                </ul>
-            </nav>
-            <span class="header-rigth-container__separator">|</span>
-            <button class="header-rigth-container__btn-theme" title="Cambia de tema" type="button"></button>
-            <input type="button" value="Conoce mi CV" class="header-rigth-container__btn btn-main" title="Desplegar CV">
+        <div class="header-container">
+            <figure class="header-logo"><a href="#"><img src="https://seeklogo.com/images/G/google-developers-logo-F8BF3155AC-seeklogo.com.png" alt="Logo Juan Mosquera" class="header-logo__img"></a></figure>
+            <div class="header-rigth-container">
+                <nav class="header-navbar">
+                    <ul class="header-navbar__content">
+                        <li class="header-navbar__content-item"><a href="#home" class="header-navbar__content-item-ref" title="Inio"></a></li>
+                        <li class="header-navbar__content-item"><a href="#aboutme" class="header-navbar__content-item-ref">Sobre mí</a></li>
+                        <li class="header-navbar__content-item"><a href="#skills" class="header-navbar__content-item-ref">Skills</a></li>
+                        <li class="header-navbar__content-item"><a href="#hobbies" class="header-navbar__content-item-ref">Hobbies</a></li>
+                        <li class="header-navbar__content-item"><a href="#education" class="header-navbar__content-item-ref">Formación</a></li>
+                        <li class="header-navbar__content-item"><a href="#projects" class="header-navbar__content-item-ref">Proyectos</a></li>
+                        <li class="header-navbar__content-item"><a href="#contact" class="header-navbar__content-item-ref" title="Contacto"></a></li>
+                    </ul>
+                </nav>
+                <span class="header-rigth-container__separator">|</span>
+                <button class="header-rigth-container__btn-theme" title="Cambia de tema" type="button"></button>
+                <input type="button" value="Ir a contactar" class="header-rigth-container__btn btn-main " title="Ir a contacto"  onclick="location.href='#contact'">
+            </div>
         </div>
     </header>
     <main class="main">
@@ -39,12 +42,12 @@
                     <p>Fronted Developer </p>
                 </div>
             </div>
-            <p class="main-header__parraf">Sí, como viste, mi nombre es <strong>Juan Mosquera</strong> y tienes toda esta página para conocer un poco más acerca de mí, mi formación, mis hobbies y proyectos, aún así, si lo que es quieres es contactarme te dejo un botón para que puedas hacerlo.</p>
-            <button type="button" class="main-header__btn btn-main" title="Ir a contactar">Presiona aquí</button>
+            <p class="main-header__parraf">Sí, como leiste, mi nombre es <strong>Juan Mosquera</strong>. Tienes toda esta página para conocer un poco más acerca de mí, mi formación, mis hobbies y proyectos, aún así, si lo que es quieres es contactarme te dejo un botón para que puedas hacerlo.</p>
+            <button type="button" class="main-header__btn btn-main" title="Ir a contactar" onclick="location.href='#contact'">Presiona aquí</button>
         </section>
         <section class="main-aboutme" id="aboutme">
             <div>
-                <h2 class="main-aboutme__title">Sobre mí</h2>
+                <h2 class="main-aboutme__title title">Sobre mí</h2>
                 <p class="main-aboutme__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tenetur unde expedita vitae ad nam fuga, in amet labore quis. Tempora itaque quo, quos perferendis ab sunt animi aliquam saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veritatis perferendis magnam, sunt corporis error eligendi sequi pariatur quos animi!
                 </p>
                 <p class="main-aboutme__text">
@@ -54,7 +57,7 @@
         </section>
         <section class="main-skills-hobbies">
             <article class="main-skills" id="skills">
-                <h2 class="main-skills__title">Skills</h2>
+                <h2 class="main-skills__title title">Skills</h2>
                 <div class="main-skills__content">
                     <figure class="main-skills__content-card">
                         <img src="./assets/img/html5.svg" alt="skill" class="main-skills__content-card-img">
@@ -83,7 +86,7 @@
             </div>
         </article>
         <article class="main-hobbies" id="hobbies">
-            <h2 class="main-hobbies__title">Hobbies</h2>
+            <h2 class="main-hobbies__title title">Hobbies</h2>
             <div class="main-hobbies__content">
                 <figure class="main-hobbies__content-card">
                     <img src="./assets/img/album-open.svg" alt="hobbie" class="main-hobbies__content-card-img">
@@ -104,9 +107,155 @@
         </div>
         </article>
         </section>
+        <section class="main-education" id="education">
+            <h2 class="main-education__title title">Formación Academica</h2>
+            <div class="main-education__content">
+                <Figure class="main-education__card">
+                    <img src="http://portal.unicauca.edu.co/versionP/imagebrowser/view/image/7376/_original" alt="Logo de estudio" class="main-education__card-img">
+                    <div class="main-education__card-info-content">
+                        <figcaption class="main-education__card-info">
+                            <h3 class="main-education__card-info-title">Universidad del Cauca</h3>
+                            <h4 class="main-education__card-info-desc">Tecnología en Telemática</h4>
+                        </figcaption>
+                    </div>
+                </Figure>
+                <Figure class="main-education__card">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHWUHB1MvhoQw/company-logo_200_200/0/1630508590705?e=2147483647&v=beta&t=bCoxxQQzn8mXlzsow5SqYh0lMzWMXf6lQ6oW3x8CbiE" alt="Logo de estudio" class="main-education__card-img">
+                    <div class="main-education__card-info-content">
+                        <figcaption class="main-education__card-info">
+                            <h3 class="main-education__card-info-title">ONE de Oracle</h3>
+                            <h4 class="main-education__card-info-desc">Prin. en Programación G3</h4>
+                        </figcaption>
+                    </div>
+                </Figure>
+                <Figure class="main-education__card">
+                    <img src="https://yt3.ggpht.com/uoUSmEFor4Xl4l4gnnQo-C-Q3wisHRGAVfsG1CV0X73pDoiAzBTfroVqQByFkNpjBBE-3w0H=s900-c-k-c0x00ffffff-no-rj" alt="Logo de estudio" class="main-education__card-img">
+                    <div class="main-education__card-info-content">
+                        <figcaption class="main-education__card-info">
+                            <h3 class="main-education__card-info-title">Open Bootcamp</h3>
+                            <h4 class="main-education__card-info-desc">Curso de HTML</h4>
+                        </figcaption>
+                    </div>
+                </Figure>
+                <Figure class="main-education__card">
+                    <img src="https://yt3.ggpht.com/uoUSmEFor4Xl4l4gnnQo-C-Q3wisHRGAVfsG1CV0X73pDoiAzBTfroVqQByFkNpjBBE-3w0H=s900-c-k-c0x00ffffff-no-rj" alt="Logo de estudio" class="main-education__card-img">
+                    <div class="main-education__card-info-content">
+                        <figcaption class="main-education__card-info">
+                            <h3 class="main-education__card-info-title">Open Bootcamp</h3>
+                            <h4 class="main-education__card-info-desc">Curso de Javascript</h4>
+                        </figcaption>
+                    </div>
+                </Figure>
+            </div>
+        </section>
+        <section class="main-projects"  id="projects">
+            <h2 class="main-projects__title title">Proyectos</h2>
+            <div class="main-projects__content">
+                <figure class="main-projects__card">
+                    <img src="http://naiarafernandez.com/wp-content/uploads/2015/10/que-debo-tener-en-cuenta-para-planificar-un-proyecto-web.png" alt="Preview de proyecto" class="main-projects__card-img">
+                    <div class="main-projects__card-content">
+                        <figcaption class="main-projects__card-caption">
+                            <h3 class="main-projects__card-caption-title">Portafolio</h3>
+                            <p class="main-projects__card-caption-tecnology"><span>HTML</span>/<span>CSS</span>/<span>SASS</span>/<span>JS</span></p>
+                        </figcaption>
+                        <button type="button" class="main-projects__card-btn">DEMO</button>
+                        <button type="button" class="main-projects__card-btn">Repositorio</button>
+                    </div>
+                </figure>
+                <figure class="main-projects__card">
+                    <img src="./assets/img/ahorcado.webp" alt="Preview de proyecto" class="main-projects__card-img">
+                    <div class="main-projects__card-content">
+                        <figcaption class="main-projects__card-caption">
+                            <h3 class="main-projects__card-caption-title">Ahorcado</h3>
+                            <p class="main-projects__card-caption-tecnology"><span>HTML</span>/<span>CSS</span>/<span>JS</span></p>
+                        </figcaption>
+                        <button type="button" class="main-projects__card-btn">DEMO</button>
+                        <button type="button" class="main-projects__card-btn">Repositorio</button>
+                    </div>
+                </figure>
+                <figure class="main-projects__card">
+                    <img src="./assets/img/calculator.webp" alt="Preview de proyecto" class="main-projects__card-img">
+                    <div class="main-projects__card-content">
+                        <figcaption class="main-projects__card-caption">
+                            <h3 class="main-projects__card-caption-title">Calculadora</h3>
+                            <p class="main-projects__card-caption-tecnology"><span>HTML</span>/<span>CSS</span>/<span>SASS</span>/<span>JS</span></p>
+                        </figcaption>
+                        <button type="button" class="main-projects__card-btn">DEMO</button>
+                        <button type="button" class="main-projects__card-btn">Repositorio</button>
+                    </div>
+                </figure>
+                <figure class="main-projects__card">
+                    <img src="./assets/img/comments.webp" alt="Preview de proyecto" class="main-projects__card-img">
+                    <div class="main-projects__card-content">
+                        <figcaption class="main-projects__card-caption">
+                            <h3 class="main-projects__card-caption-title">Commentarios interactivos</h3>
+                            <p class="main-projects__card-caption-tecnology"><span>HTML</span>/<span>CSS</span>/<span>SASS</span>/<span>JS</span>/<span>JSON</span></p>
+                        </figcaption>
+                        <button type="button" class="main-projects__card-btn">DEMO</button>
+                        <button type="button" class="main-projects__card-btn">Repositorio</button>
+                    </div>
+                </figure>
+                <figure class="main-projects__card">
+                    <img src="./assets/img/notifications.webp" alt="Preview project" class="main-projects__card-img">
+                    <div class="main-projects__card-content">
+                        <figcaption class="main-projects__card-caption">
+                            <h3 class="main-projects__card-caption-title">Notificaciones interactivas</h3>
+                            <p class="main-projects__card-caption-tecnology"><span>HTML</span>/<span>CSS</span>/<span>SASS</span>/<span>JS</span>/<span>JSON</span></p>
+                        </figcaption>
+                        <button type="button" class="main-projects__card-btn">DEMO</button>
+                        <button type="button" class="main-projects__card-btn">Repositorio</button>
+                    </div>
+                </figure>
+                <figure class="main-projects__card">
+                    <img src="./assets/img/encriptador.webp" alt="Preview de proyecto" class="main-projects__card-img">
+                    <div class="main-projects__card-content">
+                        <figcaption class="main-projects__card-caption">
+                            <h3 class="main-projects__card-caption-title">Encriptador</h3>
+                            <p class="main-projects__card-caption-tecnology"><span>HTML</span>/<span>CSS</span>/<span>SASS</span></p>
+                        </figcaption>
+                        <button type="button" class="main-projects__card-btn">DEMO</button>
+                        <button type="button" class="main-projects__card-btn">Repositorio</button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+        <section class="main-contact" id="contact">
+            <img src="" alt="referencia a contactar" class="main-contact__img">
+            <div class="main-contact__container">
+                <h2 class="main-contact-title title">Contáctame</h2>
+                <form action="/" class="main-contact__form">
+                    <P class="main-contact__form-desc">Solo completa el siguiente formulario y estarás a un paso de contacarte conmigo.</P>
+                    <label for="name" class="main-contact__form-label">Nombre:</label>
+                    <input type="text" name="name" id="name" title="Ingresa tu nombre" class="main-contact__form-input" placeholder="Ingresa tu nombre:">
+                    <span class="input-error">Este campo no puede estar vacio</span>
+                    <label for="email" class="main-contact__form-label">Correo:</label>
+                    <input type="email" name="email" id="email" title="Ingresa tu correo" class="main-contact__form-input" placeholder="Ingresa tu correo:">
+                    <span class="input-error">Este campo no puede estar vacio</span>
+                    <label for="subject" class="main-contact__form-label">Asunto:</label>
+                    <input type="text" name="subject" id="subject" title="Ingresa el asunto" class="main-contact__form-input" placeholder="Ingresa el asunto:">
+                    <span class="input-error">Este campo no puede estar vacio</span>
+                    <label for="message" class="main-contact__form-label">Mensaje:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="main-contact__form-message" placeholder="Ingresa un mensaje:"></textarea>
+                    <span class="input-error">Este campo no puede estar vacio</span>
+                    <button type="submit" class="main-contact__form-btn btn-main">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <article class="footer-page-description">
+        </article>
+        <nav class="footer-navbar">
+            <ul class="footer-navbar__content">
+                <li class="footer-navbar__content-item"><a href="#home" class="footer-navbar__content-item-ref" title="Inio"></a></li>                    
+                <li class="footer-navbar__content-item"><a href="#aboutme" class="footer-navbar__content-item-ref">Sobre mí</a></li>
+                <li class="footer-navbar__content-item"><a href="#skills" class="footer-navbar__content-item-ref">Skills</a></li>
+                <li class="footer-navbar__content-item"><a href="#hobbies" class="footer-navbar__content-item-ref">Hobbies</a></li>
+                <li class="footer-navbar__content-item"><a href="#education" class="footer-navbar__content-item-ref">Formación</a></li>
+                <li class="footer-navbar__content-item"><a href="#projects" class="footer-navbar__content-item-ref">Proyectos</a></li>
+                <li class="footer-navbar__content-item"><a href="#contacto" class="footer-navbar__content-item-ref" title="Contacto"></a></li>                    
+            </ul>
+        </nav>
     </footer>
     <script src="./assets/js/vendor/typed.js"></script>
     <script src="./assets/js/main.js"></script>

@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
-body {
-  font-family: "Rubik", sans-serif;
-  background-color: hsl(220deg, 18%, 97%);
-}
-
 .header {
+  width: 100%;
+}
+.header-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -44,12 +42,12 @@ body {
   height: 38px;
 }
 .header-rigth-container__btn-theme {
-  margin-bottom: -10px;
-  width: 38px;
-  height: 38px;
+  padding: 0;
+  width: 26px;
+  height: 26px;
   background-image: url(../img/half-moon.svg);
   background-repeat: no-repeat;
-  padding-right: 20px;
+  margin-right: 20px;
   background-color: transparent;
   appearance: none;
   border: none;
@@ -66,6 +64,7 @@ body {
   left: 0;
   right: 0;
   transition: background 0.3s ease-in-out;
+  box-shadow: 1px 1px 2px 0 hsl(193deg, 13%, 87%);
 }
 
 .ref--active, .header-navbar__content-item-ref:active {
@@ -73,26 +72,9 @@ body {
   font-weight: 500;
 }
 
-.btn-main {
-  background-color: hsl(200deg, 98%, 40%);
-  border: none;
-  font-size: 16px;
-  min-height: 38px;
-  border-radius: 50px;
-  color: hsl(225deg, 67%, 98%);
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  padding: 0 20px;
-}
-.btn-main:hover {
-  cursor: pointer;
-  background-color: hsl(142deg, 70%, 45%);
-  transition: all 0.3 ease-in-out;
-}
-
 .main-header {
   align-items: center;
-  background-color: hsl(197deg, 13%, 79%);
+  background-color: hsl(193deg, 13%, 87%);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -128,7 +110,7 @@ body {
 .main-header__btn {
   height: 48px;
   font-size: 18px;
-  padding: 0 25px;
+  padding: 0 35px !important;
 }
 .main-aboutme {
   margin: 90px auto;
@@ -136,9 +118,7 @@ body {
   width: 1164px;
 }
 .main-aboutme__title {
-  font-weight: 700;
-  font-size: 25px;
-  margin-bottom: 50px;
+  text-align: left;
 }
 .main-aboutme__text {
   line-height: 1.5rem;
@@ -152,12 +132,6 @@ body {
 }
 .main-skills, .main-hobbies {
   padding-bottom: 100px;
-}
-.main-skills__title, .main-hobbies__title {
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
 }
 .main-skills__content, .main-hobbies__content {
   display: flex;
@@ -197,13 +171,191 @@ body {
 .main-hobbies__content {
   justify-content: space-evenly;
 }
-
-section[id], article[id] {
-  scroll-margin-top: 90px;
+.main-education {
+  margin: auto;
+  padding: 0px 23px;
+  padding-bottom: 100px;
+  width: 1164px;
+}
+.main-education__content {
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.main-education__card {
+  width: 200px;
+  height: 260px;
+}
+.main-education__card-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+.main-education__card-info-title {
+  padding: 10px 0 5px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(200deg, 98%, 40%);
+}
+.main-projects {
+  background-color: hsl(200deg, 84%, 93%);
+  border-radius: 20px;
+  margin: auto;
+  padding: 50px 23px;
+  padding-bottom: 0px;
+  width: 1164px;
+}
+.main-projects__title {
+  padding: 30px 0;
+}
+.main-projects__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-projects__card {
+  display: flex;
+  margin: 0 50px;
+}
+.main-projects__card-img {
+  height: 150px;
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.main-projects__card-content {
+  height: 150px;
+  margin-bottom: 100px;
+  width: 150px;
+}
+.main-projects__card-caption-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.main-projects__card-caption-tecnology {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.main-projects__card-caption-tecnology span:hover {
+  color: hsl(142deg, 70%, 45%);
+  cursor: default;
+}
+.main-projects__card-btn {
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: hsl(200deg, 98%, 40%);
+  border: 2px solid hsl(200deg, 98%, 40%);
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 20px;
+  font-family: "Rubik", sans-serif;
+}
+.main-projects__card-btn:hover {
+  cursor: pointer;
+  border: 2px solid hsl(142deg, 70%, 45%);
+  color: hsl(142deg, 70%, 45%);
+}
+.main-contact {
+  margin: 50px auto;
+  padding: 50px 23px;
+  padding-bottom: 0px;
+  width: 1164px;
+  display: flex;
+}
+.main-contact__container, .main-contact__img {
+  background-color: hsl(193deg, 13%, 87%);
+  border-radius: 20px;
+  margin: 100px auto;
+  padding: 10px 30px;
+  padding-bottom: 80px;
+  width: 428px;
+}
+.main-contact__img {
+  background-color: transparent;
+}
+.main-contact-title {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.main-contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.main-contact__form-desc {
+  padding-bottom: 10px;
+  line-height: 1.4rem;
+}
+.main-contact__form-label {
+  margin: 5px 0;
+  color: hsl(216deg, 2%, 58%);
+}
+.main-contact__form-input {
+  appearance: none;
+  border: 1px solid hsl(216deg, 2%, 58%);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+.main-contact__form-message {
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid hsl(216deg, 2%, 58%);
+  resize: none;
+  padding: 8px 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+.main-contact__form .input-error {
+  visibility: hidden;
+  color: red;
+  padding: 4px 0;
+}
+.main-contact__form-btn {
+  margin: auto;
+  width: 80%;
+  margin-top: 20px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(220deg, 18%, 97%);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-main {
+  background-color: hsl(200deg, 98%, 40%);
+  border: none;
+  font-size: 16px;
+  min-height: 38px;
+  border-radius: 50px;
+  color: hsl(225deg, 67%, 98%);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  padding: 0 20px;
+}
+.btn-main:hover {
+  cursor: pointer;
+  background-color: hsl(142deg, 70%, 45%);
+  transition: all 0.3 ease-in-out;
+}
+
+section[id], article[id] {
+  scroll-margin-top: 90px;
 }
 
 /*# sourceMappingURL=style.css.map */
