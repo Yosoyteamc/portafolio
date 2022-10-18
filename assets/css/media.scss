@@ -1,0 +1,22 @@
+@use 'source/variables' as *;
+@use 'source/header';
+@use 'source/main';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $font-family;
+    font-size: 1rem;
+    background-color: $color-bg;
+    color: $color-font;
+    .content{
+        width: 1190px;
+        padding: 10px;
+        margin: auto;
+    }
+    .title{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
