@@ -1,0 +1,74 @@
+@use 'variables' as *;
+
+.footer-bg{
+    background-color: $color-bg-gray;
+    padding: 70px 0 20px 0;
+    width: 100%;
+    .copy{
+        margin: 40px;
+        text-align: center;
+        span{
+            font-weight: 700;
+            color: $color-bg-blue
+        }
+    }
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-around;
+    &-about{
+        width: 550px;
+        &__title{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &__text{
+            line-height: 1.5rem;
+        }
+    }
+    &-nav{
+        &__title{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        &__items{
+            margin-top: 15px;
+            .socialmedia-nav{
+                &__item{
+                    margin: 10px 0;
+                }
+                &__link{
+                    text-decoration: none;
+                    color: $color-bg-gray-light;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+    &-content{
+        display: flex;
+        justify-content: center;
+        .socialmedia{
+                &-link{
+                border-radius: 100%;
+                background-color: $color-bg-grey;
+                height: 35px;
+                margin-right: 5px;
+                padding: 5px;
+                width: 35px;
+                svg{
+                    fill: $color-bg-gray-light;
+                    height: 35px;
+                    width: 35px;
+                    &:hover{
+                        fill: $color-font;
+                    }
+                }
+            }
+        }
+    }
+}
+

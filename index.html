@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio: Juan Mosquera</title>
+    <title>Portafolio :: Juan Mosquera</title>
     <link rel="stylesheet" href="./assets/css/vendor/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -15,61 +15,309 @@
                 <li class="navbar__item"><a class="navbar__link" href="#projects">proyectos</a></li>
             </ul>
         </nav>
+        <div class="back-img back-img-left">
+            <img class="back-img__img" src="./assets/img/Group-132-blur.png" alt="">
+        </div>        
+        <div class="back-img-2 back-img-right">
+            <img class="back-img__img" src="./assets/img/Group-132-blur.png" alt="">
+        </div>
         <section class="cover-header">
-            <h1 class="cover-header__title">Portafolio:<br>Juan Mosquera</h1>
-            <p class="cover-header__text">Conoce sobre mi experiencia y las redes sociales donde podrás contactarme.</p>
-            <button class="cover-header__btn" type="button">Contactame <img class="cover-header__btn-img" src="./assets/img/arrow-right.svg" alt="Icon arrow"></button>
-            <img class="cover-header__img" src="" alt="Image for header">
+            <h1 class="cover-header__title">Portafolio :: Juan Mosquera</h1>
+            <p class="cover-header__text">Haz un recorrido sobre mi experiencia, proyectos y las redes sociales donde podrás contactarme.</p>
+            <button class="cover-header__btn btn-grad" type="button" onclick="location.href='#aboutme'">Empezar <img class="cover-header__btn-img" src="./assets/img/arrow-right.svg" alt="Icon arrow"></button>
+            <!--img class="cover-header__img" src="" alt="Image for header"-->
         </section>
     </header>
     <main class="content">
+        <section class="aboutme" id="aboutme">
+            <h2 class="aboutme__title title"><img class="aboutme__title-img" src="./assets/img/info.svg" alt="Icon proyects">Sobre mí</h2>
+            <div class="aboutme-container">
+                <figure class="aboutme-fig scale-hover">
+                    <img class="aboutme-fig__img" src="./assets/img/cover.webp" alt="avatar">
+                    <span class="aboutme-fig__name">@yosoyteamc</span>
+                    <p class="aboutme-fig__text">Fronted Developer Jr</p>
+                </figure>
+                <div class="aboutme-info">
+                    <p class="aboutme-info__text">Hola, mi nombre es Juan, soy de Colombia y tengo 24 años. Mis conocimientos de programación son gracias a que curse Tecnología de Telemática en la Universidad del Cauca, pero aún no estoy titulado. Me considero polímata, ya que poseo la habilidad de poder destacar en varias de las actividades en las que me involucro y eso se lo debo a mi creatividad. Creo fielmente que podría ser feliz desarrollando cualquiera de mis hobbies, pero actualmente estoy enfocado en el desarrollo web y me gusta.</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills-hobbies">
+            <article class="skills" id="skills">
+                <h2 class="content__title">Skills</h2>
+                <div class="content-container">
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">HTML5</div>
+                            <div class="content__card-caption-info">Intermedio</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">CSS3</div>
+                            <div class="content__card-caption-info">Intermedio</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Javascript</div>
+                            <div class="content__card-caption-info">Intermedio</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">SASS</div>
+                            <div class="content__card-caption-info">Básico</div>
+                        </figcaption>
+                    </figure>                    
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">JAVA</div>
+                            <div class="content__card-caption-info">Básico</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Python</div>
+                            <div class="content__card-caption-info">Básico</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">ReactJS</div>
+                            <div class="content__card-caption-info">En curso</div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="hobbies" id="hobbies">
+                <h2 class="content__title">Hobbies</h2>
+                <div class="content-container">
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Música</div>
+                            <div class="content__card-caption-info">Cantar, escribir.</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Diseño gráfico</div>
+                            <div class="content__card-caption-info">Crear imágenes, animar.</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Fútbol</div>
+                            <div class="content__card-caption-info">Jugar con amigos.</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Vídeojuegos</div>
+                            <div class="content__card-caption-info">Ver y jugar.</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="content__card scale-hover">
+                        <img class="content__card-cover" src="./assets/img/cover.webp" alt="icon skills">
+                        <figcaption class="content__card-caption">
+                            <div class="content__card-caption-title">Ver series</div>
+                            <div class="content__card-caption-info">Ficción y comedia</div>
+                        </figcaption>
+                    </figure>                    
+                </div>
+            </article>
+        </section>
+        <section class="education">
+            <h2 class="education-title">Formación Académica</h2>
+            <div class="education-container">
+                <div class="education__card">
+                    <img class="education__cover" src="./assets/img/cover.webp" alt="portada education">
+                    <img class="education__avatar" src="./assets/img/cover.webp" alt="avatar education">
+                    <span class="education__title--carrer">Tecnología en Telemática</span>
+                    <h3 class="education__title">Universidad del Cauca</h3>
+                    <span class="education__nick">@unicauca</span>
+                    <div class="education-info">
+                        <div class="education-info__text">
+                            <p class="education-info__text-title">Total tiempo</p>
+                            <p class="education-info__text-value">6 semestres</p>
+                        </div>
+                        <div class="education-info__text">
+                            <p class="education-info__text-title">Total cursos</p>
+                            <p class="education-info__text-value">39+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education__card">
+                    <img class="education__cover" src="./assets/img/cover.webp" alt="portada education">
+                    <img class="education__avatar" src="./assets/img/cover.webp" alt="avatar education">
+                    <span class="education__title--carrer">Desarrollador Full Stack</span>
+                    <h3 class="education__title">ONE Oracle</h3>
+                    <span class="education__nick">@oraclelatam</span>
+                    <div class="education-info">
+                        <div class="education-info__text">
+                            <p class="education-info__text-title">Total tiempo</p>
+                            <p class="education-info__text-value">En curso</p>
+                        </div>
+                        <div class="education-info__text">
+                            <p class="education-info__text-title">Total cursos</p>
+                            <p class="education-info__text-value">8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education__card">
+                    <img class="education__cover" src="./assets/img/cover.webp" alt="portada education">
+                    <img class="education__avatar" src="./assets/img/cover.webp" alt="avatar education">
+                    <span class="education__title--carrer">Ruta Fronted</span>
+                    <h3 class="education__title">Open Bootcamp</h3>
+                    <span class="education__nick">@open_bootcamp</span>
+                    <div class="education-info">
+                        <div class="education-info__text">
+                            <p class="education-info__text-title">Total tiempo</p>
+                            <p class="education-info__text-value">En curso</p>
+                        </div>
+                        <div class="education-info__text">
+                            <p class="education-info__text-title">Total cursos</p>
+                            <p class="education-info__text-value">6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="projects" id="projects">
             <div class="projects-intro">
                 <h1 class="projects-intro__title title"><img class="projects-intro__title-img" src="./assets/img/windows3d.svg" alt="Icon proyects">Proyectos</h1>
-                <p class="projects-intro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deleniti, minima exercitationem sapiente ratione optio.</p>
+                <p class="projects-intro__text">Los siguientes proyectos hacen parte de mi experiencia profesional, la mayoría de ellos son realizados para #Challenges donde se invierte tiempo en la práctica de conocimientos sobre semántica de HMTL5, estilos en CSS con preprocesadores(SASS) o frameworks(Bootstrap) y codificación con Javascript, lenguaje con el cual se crean páginas dinámicas a partir de datos en archivos JSON, con una estructura orientada a objetos y las relaciones entre los mismos.</p>
             </div>
             <div class="projects-container">
                 <div class="card-project">
-                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview of project">
-                    <h3 class="card-project__title">Comentarios interactivos</h3>
-                    <div class="card-project__icons">
-                        <a class="card-project__link" href="#" title="Sitio web">  <img class="card-project__img" src="./assets/img/globe.svg" alt=""></a>
-                        <a class="card-project__link" href="#" title="Repositorio"><img class="card-project__img" src="./assets/img/archive.svg" alt=""></a>
+                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview project">
+                    <div class="card-project__score">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/></svg>
+                        <span class="card-project__score-value">0</span>
                     </div>
-                    <p class="card-project__details"><span>HMTL</span>/<span>CSS</span>/<span>JS</span></p>
+                    <h2 class="card-project__title">"Portafolio"</h2>
+                    <p class="card-project__tags"><span>HTML</span><span>CSS</span><span>SASS</span><span>JS</span></p>
+                    <p class="card-project__desc">Portafolio inspirado en las páginas de NFTs, con modos de color claro y oscuro.</p>
+                    <div class="card-project__links">
+                        <a class="btn-grad" href="#"><img src="./assets/img/archive.svg" alt="icon repository"> Ir a repositorio</a>
+                    </div>
                 </div>
                 <div class="card-project">
-                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview of project">
-                    <h3 class="card-project__title">Comentarios interactivos</h3>
-                    <div class="card-project__icons">
-                        <a class="card-project__link" href="#" title="Sitio web">  <img class="card-project__img" src="./assets/img/globe.svg" alt=""></a>
-                        <a class="card-project__link" href="#" title="Repositorio"><img class="card-project__img" src="./assets/img/archive.svg" alt=""></a>
+                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview project">
+                    <div class="card-project__score">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/></svg>
+                        <span class="card-project__score-value">0</span>
                     </div>
-                    <p class="card-project__details"><span>HMTL</span>/<span>CSS</span>/<span>JS</span></p>
+                    <h2 class="card-project__title">"Comentarios interactivos"</h2>
+                    <p class="card-project__tags"><span>HTML</span><span>CSS</span><span>JS</span><span>SASS</span><span>JSON</span></p>
+                    <p class="card-project__desc">Página dinámica creada a partir de datos JSON, con almacenamiento en el navegador.</p>
+                    <div class="card-project__links">
+                        <a class="btn-grad" href="https://yosoyteamc.github.io/interactive-comments-section-main/" target="_blank" rel="noopener"><img src="./assets/img/globe.svg" alt="icon website"> Ver demo</a>
+                        <a class="btn-grad" href="https://github.com/Yosoyteamc/interactive-comments-section-main" target="_blank" rel="noopener"><img src="./assets/img/archive.svg" alt="icon repository"> Ir a repositorio</a>
+                    </div>
                 </div>
                 <div class="card-project">
-                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview of project">
-                    <h3 class="card-project__title">Comentarios interactivos</h3>
-                    <div class="card-project__icons">
-                        <a class="card-project__link" href="#" title="Sitio web">  <img class="card-project__img" src="./assets/img/globe.svg" alt=""></a>
-                        <a class="card-project__link" href="#" title="Repositorio"><img class="card-project__img" src="./assets/img/archive.svg" alt=""></a>
+                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview project">
+                    <div class="card-project__score">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/></svg>
+                        <span class="card-project__score-value">0</span>
                     </div>
-                    <p class="card-project__details"><span>HMTL</span>/<span>CSS</span>/<span>JS</span></p>
+                    <h2 class="card-project__title">"Calculadora"</h2>
+                    <p class="card-project__tags"><span>HTML</span><span>CSS</span><span>JS</span><span>SASS</span></p>
+                    <p class="card-project__desc">Calculadora con funcionalidades simples y diferentes temas de color.</p>
+                    <div class="card-project__links">
+                        <a class="btn-grad" href="https://yosoyteamc.github.io/calculator-app-main" target="_blank" rel="noopener"><img src="./assets/img/globe.svg" alt="icon website"> Ver demo</a>
+                        <a class="btn-grad" href="https://github.com/Yosoyteamc/calculator-app-main" target="_blank" rel="noopener"><img src="./assets/img/archive.svg" alt="icon repository"> Ir a repositorio</a>
+                    </div>
                 </div>
                 <div class="card-project">
-                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview of project">
-                    <h3 class="card-project__title">Comentarios interactivos</h3>
-                    <div class="card-project__icons">
-                        <a class="card-project__link" href="#" title="Sitio web">  <img class="card-project__img" src="./assets/img/globe.svg" alt=""></a>
-                        <a class="card-project__link" href="#" title="Repositorio"><img class="card-project__img" src="./assets/img/archive.svg" alt=""></a>
+                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview project">
+                    <div class="card-project__score">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/></svg>
+                        <span class="card-project__score-value">0</span>
                     </div>
-                    <p class="card-project__details"><span>HMTL</span>/<span>CSS</span>/<span>JS</span></p>
+                    <h2 class="card-project__title">"Ahorcado" #ONEOracle</h2>
+                    <p class="card-project__tags"><span>HTML</span><span>CSS</span><span>JS</span></p>
+                    <p class="card-project__desc">Juego del reto para proyecto ONE de Oracle. Tema de color inspirado en juegos viejos.</p>
+                    <div class="card-project__links">
+                        <a class="btn-grad" href="https://yosoyteamc.github.io/AhorcadoGame/" target="_blank" rel="noopener"><img src="./assets/img/globe.svg" alt="icon website"> Ver demo</a>
+                        <a class="btn-grad" href="https://github.com/Yosoyteamc/AhorcadoGame" target="_blank" rel="noopener"><img src="./assets/img/archive.svg" alt="icon repository"> Ir a repositorio</a>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview project">
+                    <div class="card-project__score">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/></svg>
+                        <span class="card-project__score-value">0</span>
+                    </div>
+                    <h2 class="card-project__title">"Encriptador" #ONEOracle</h2>
+                    <p class="card-project__tags"><span>HTML</span><span>CSS</span><span>JS</span></p>
+                    <p class="card-project__desc">Encripta y desencripta texto, reto para el proyecto ONE de Oracle.</p>
+                    <div class="card-project__links">
+                        <a class="btn-grad" href="https://yosoyteamc.github.io/Encripatador-Desencriptador/" target="_blank" rel="noopener"><img src="./assets/img/globe.svg" alt="icon website"> Ver demo</a>
+                        <a class="btn-grad" href="https://github.com/Yosoyteamc/Encripatador-Desencriptador" target="_blank" rel="noopener"><img src="./assets/img/archive.svg" alt="icon repository"> Ir a repositorio</a>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img class="card-project__cover" src="./assets/img/cover.webp" alt="preview project">
+                    <div class="card-project__score">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/></svg>
+                        <span class="card-project__score-value">0</span>
+                    </div>
+                    <h2 class="card-project__title">"Página de notificaciones"</h2>
+                    <p class="card-project__tags"><span>HTML</span><span>CSS</span><span>JS</span></p>
+                    <p class="card-project__desc">Página de notificaciones con un contador que interactua con las mismas.</p>
+                    <div class="card-project__links">
+                        <a class="btn-grad" href="https://yosoyteamc.github.io/notifications-page-main/" target="_blank" rel="noopener"><img src="./assets/img/globe.svg" alt="icon website"> Ver demo</a>
+                        <a class="btn-grad" href="https://github.com/Yosoyteamc/notifications-page-main" target="_blank" rel="noopener"><img src="./assets/img/archive.svg" alt="icon repository"> Ir a repositorio</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="content"></footer>
-    <script src="./assets/js/vendor/typed.js"></script>
+    <footer class="footer-bg">
+        <div>
+            <div class="content socialmedia">
+                <div class="socialmedia-about">
+                    <h2 class="socialmedia-about__title">Acerca del Proyecto</h2>
+                    <p class="socialmedia-about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati hic reprehenderit animi saepe repellat, laboriosam eaque impedit, voluptatum atque pariatur est quo ratione ipsam neque dicta natus placeat numquam, dignissimos dolor cumque magnam? Cupiditate ut porro at sint deserunt nisi culpa dolorum error amet! Beatae facilis consequatur cumque magnam neque.</p>
+                </div>
+                <div class="socialmedia-nav">
+                    <span class="socialmedia-nav__title">Menu</span>
+                    <ul class="socialmedia-nav__items">
+                        <li class="socialmedia-nav__item"><a class="socialmedia-nav__link" href="#aboutme">Sobre mí</a></li>
+                        <li class="socialmedia-nav__item"><a class="socialmedia-nav__link" href="#skills">Skills</a></li>
+                        <li class="socialmedia-nav__item"><a class="socialmedia-nav__link" href="#hobbies">Hobbies</a></li>
+                        <li class="socialmedia-nav__item"><a class="socialmedia-nav__link" href="#projects">Proyectos</a></li>
+                    </ul>
+                </div>
+                <div class="socialmedia-content">
+                    <a class="socialmedia-link" href="https://github.com/Yosoyteamc" target="_blank" rel="noopener" title="Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a class="socialmedia-link" href="https://instagram.com/Yosoyteamc" target="_blank" rel="noopener" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/></svg>
+                    </a>
+                    <a class="socialmedia-link" href="https://www.linkedin.com/in/juanmosquera98/" target="_blank" rel="noopener" title="Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copy">Desarrollado por <span>Juan Mosquera</span></p>
+    </footer>
+    <!--script src="./assets/js/vendor/typed.js"></script-->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
