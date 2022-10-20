@@ -859,7 +859,7 @@ body .icon-dark {
 }
 @media screen and (max-width: 375px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 }
 body .content {

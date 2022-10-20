@@ -17,7 +17,7 @@ body{
       display: none;
     }
     @media screen and (max-width: 375px) {
-      overflow-x: hidden;
+      overflow-x: hidden !important;
     }
     .content{
         width: 1190px;
