@@ -844,6 +844,7 @@ body.is__light .socialmedia-content .socialmedia-link svg:hover {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
