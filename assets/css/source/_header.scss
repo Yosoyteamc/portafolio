@@ -1,9 +1,15 @@
 @use 'variables' as *;
+
 .navbar{
     padding: 17px 0;
     &__items{
         display: block;
         height: 20px;
+        @media screen and (max-width: 375px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+        }
     }
     &__item{
         display: inline;
@@ -17,6 +23,49 @@
         margin-left: 50px;
         text-decoration: none;
         text-transform: uppercase;
+        @media screen and (max-width: 375px) {
+            margin-left: 20px;
+        }
+        &--icon{
+            margin-top: -8px;
+            width: 15px;
+            height: 15px;
+            background-color: $color-bg-gray;
+            padding: 8px;
+            border-radius: 100%;
+            fill: $color-font;
+        }
+        body.is__light &{
+            color: $color-bg;
+            &--icon{
+                background-color: $color-font-opacity;
+                fill: $color-bg;
+            }
+        }
+    }
+    &--active{
+        background-color: $color-bg-opacity;
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        left: 0;
+        padding-top: 27px;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+        ul{
+            margin: auto;
+            width: 1190px;
+            @media screen and (max-width: 768px){
+                width: 704px;
+            }
+            @media screen and (max-width: 375px) {
+                width: 356px;
+            }
+        }
+        body.is__light &{
+            background-color: $color-font-opacity;
+        }
     }
 }
 .back-img,.back-img-2{
@@ -36,6 +85,22 @@
         width: 100%;
         height: 100%;
     }
+    @media screen and (max-width: 768px){
+        &-left{
+            left: -60%;
+        }
+        &-right{
+            right: -60%;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        &-left{
+            left: -140%;
+        }
+        &-right{
+            right: -140%;
+        }
+    }
 }
 
 .cover-header{
@@ -44,12 +109,18 @@
     flex-direction: column;
     margin: auto;
     margin-top: 90px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     width: 660px;
+    @media screen and (max-width: 375px) {
+        width: 330px;
+    }
     &__title{
         font-size: 5.5rem;
         font-weight: bold;
         text-align: center;
+        @media screen and (max-width: 375px) {
+            font-size: 3.3rem;
+        }
     }
     &__text{
         margin-bottom: 40px;
@@ -57,6 +128,13 @@
         text-align: center;
         width: 440px;
         line-height: 1.4rem;
+        @media screen and (max-width: 768px){
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        @media screen and (max-width: 375px) {
+            width: 300px;
+        }
     }
     &__btn{
         align-items: center;

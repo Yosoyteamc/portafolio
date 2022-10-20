@@ -9,14 +9,25 @@ html{
 body{
     font-family: $font-family;
     font-size: 1rem;
+    overflow-x: hidden;
     background-color: $color-bg;
     color: $color-font;
-    overflow-x: hidden;
+    transition: all .3s ease;
+    .icon-dark{
+      display: none;
+    }
     .content{
         width: 1190px;
         padding: 10px;
         margin: auto;
         position: relative;
+
+        @media screen and (max-width: 768px) {
+          width: 704px;
+        }
+        @media screen and (max-width: 375px) {
+          width: 356px;
+        }
     }
     .title{
         font-size: 3rem;
@@ -31,6 +42,17 @@ body{
     }
 }
 
+.is__light{
+  background: hsl(240, 11%, 96%);
+  color: $color-bg;
+  .icon-light{
+    display: none;
+  }
+  .icon-dark{
+    display: block;
+  }
+}
+
 .scale-hover{
     &:hover{
         transform: scale(1.03);
@@ -41,7 +63,13 @@ body{
 
 
 section[id],article[id]{
-    scroll-margin-top: 50px;
+    scroll-margin-top: 60px;
+    @media screen and (max-width: 768px){
+      scroll-margin-top: 80px;
+    }
+    @media screen and (max-width: 375px) {
+      scroll-margin-top: 150px;
+    }
 }
 
 @-webkit-keyframes slide-top {
