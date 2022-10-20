@@ -16,6 +16,9 @@ body{
     .icon-dark{
       display: none;
     }
+    @media screen and (max-width: 375px) {
+      overflow-x: hidden;
+    }
     .content{
         width: 1190px;
         padding: 10px;

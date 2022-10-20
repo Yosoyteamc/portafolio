@@ -787,9 +787,6 @@ body.is__light .socialmedia-about__text {
     justify-content: center;
   }
 }
-.socialmedia-nav__items {
-  border: 1px solid red;
-}
 @media screen and (max-width: 375px) {
   .socialmedia-nav__items {
     display: flex;
@@ -859,6 +856,11 @@ body {
 }
 body .icon-dark {
   display: none;
+}
+@media screen and (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 body .content {
   width: 1190px;
