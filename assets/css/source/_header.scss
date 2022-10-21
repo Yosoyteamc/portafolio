@@ -1,33 +1,23 @@
 @use 'variables' as *;
 
 .navbar{
-    padding: 17px 0;
+    height: 55px;
     &__items{
-        display: block;
-        height: 20px;
-        @media screen and (max-width: 375px) {
-            display: flex;
-            justify-content: center;
-            flex-direction: row-reverse;
-        }
-    }
-    &__item{
-        display: inline;
-        float: right;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
     }
     &__link{
         color: $color-font;
         font-size: small;
         font-weight: bold;
         letter-spacing: .3rem;
-        margin-left: 50px;
+        margin-left: 10px;
         text-decoration: none;
         text-transform: uppercase;
-        @media screen and (max-width: 375px) {
-            margin-left: 20px;
-        }
         &--icon{
-            margin-top: -8px;
             width: 15px;
             height: 15px;
             background-color: $color-bg-gray;
@@ -47,21 +37,14 @@
         background-color: $color-bg-opacity;
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
-        left: 0;
-        padding-top: 27px;
+        left: -8px;
         position: fixed;
         top: 0;
         width: 100vw;
         z-index: 2;
         ul{
             margin: auto;
-            width: 1190px;
-            @media screen and (max-width: 768px){
-                width: 704px;
-            }
-            @media screen and (max-width: 375px) {
-                width: 356px;
-            }
+            width: 335px;
         }
         body.is__light &{
             background-color: $color-font-opacity;
@@ -72,34 +55,18 @@
     height: 40rem;
     object-fit: cover;
     position: absolute;
-    top: 5%;
+    top: 3%;
     width: 40rem;
     z-index: -1;
     &-left{
-        left: -40%;
+        left: -150%;
     }
     &-right{
-        right: -40%;
+        right: -150%;
     }
     &__img{
         width: 100%;
         height: 100%;
-    }
-    @media screen and (max-width: 768px){
-        &-left{
-            left: -60%;
-        }
-        &-right{
-            right: -60%;
-        }
-    }
-    @media screen and (max-width: 375px) {
-        &-left{
-            left: -140%;
-        }
-        &-right{
-            right: -140%;
-        }
     }
 }
 
@@ -108,33 +75,20 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 100px;
     margin-bottom: 100px;
-    width: 660px;
-    @media screen and (max-width: 375px) {
-        width: 330px;
-    }
+    width: 335px;
     &__title{
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         font-weight: bold;
         text-align: center;
-        @media screen and (max-width: 375px) {
-            font-size: 3.3rem;
-        }
     }
     &__text{
         margin-bottom: 40px;
         margin-top: 25px;
         text-align: center;
-        width: 440px;
+        width: 335px;
         line-height: 1.4rem;
-        @media screen and (max-width: 768px){
-            font-size: 1.2rem;
-            line-height: 1.6rem;
-        }
-        @media screen and (max-width: 375px) {
-            width: 300px;
-        }
     }
     &__btn{
         align-items: center;

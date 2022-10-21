@@ -3,7 +3,6 @@
 .footer-bg{
     background-color: $color-bg-gray;
     padding: 70px 0 20px 0;
-    width: 100%;
     body.is__light &{
         background-color: white;
         box-shadow: 0 17px 13px 0 #192c4b05;
@@ -11,9 +10,6 @@
     .copy{
         margin: 50px;
         text-align: center;
-        @media screen and (max-width: 375px) {
-            margin: 50px 0;
-        }
         span{
             font-weight: 700;
             color: $color-bg-blue
@@ -23,11 +19,7 @@
 
 .socialmedia{
     display: flex;
-    justify-content: space-around;
-    @media screen and (max-width: 375px) {
-        flex-direction: column;
-        align-items: center;
-    }
+    flex-direction: column;
     &-links{
         &__title{
             font-size: 1.5rem;
@@ -36,15 +28,12 @@
         }
     }
     &-about{
-        width: 550px;
-        @media screen and (max-width: 768px){
-            width: 304px;
-            margin-bottom: 20px;
-        }
+        width: 335px;
+        order: 3;
         &__title{
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         &__text{
             line-height: 1.5rem;
@@ -55,28 +44,17 @@
         }
     }
     &-nav{
+        order: 1;
+        margin-bottom: 50px;
         &__title{
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 15px;
-            @media screen and (max-width: 375px) {
-                display: flex;
-                justify-content: center;
-            }
+            margin-bottom: 20px;
         }
         &__items{
-            @media screen and (max-width: 375px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-bottom: 30px;
-            }
             .socialmedia-nav{
                 &__item{
                     margin: 10px 0;
-                    @media screen and (max-width: 375px) {
-                        margin-right: 30px;
-                    }
                 }
                 &__link{
                     text-decoration: none;
@@ -92,7 +70,9 @@
     }
     &-content{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        order: 2;
+        margin-bottom: 30px;
         .socialmedia{
             &-link{
                 border-radius: 100%;

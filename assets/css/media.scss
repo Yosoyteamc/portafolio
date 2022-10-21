@@ -17,24 +17,15 @@ body{
     .icon-dark{
       display: none;
     }
-    @media screen and (max-width: 375px) {
-      overflow-x: hidden !important;
-    }
     .content{
-        width: 1190px;
+        width: 335px;
         padding: 10px;
         margin: auto;
         position: relative;
-
-        @media screen and (max-width: 768px) {
-          width: 704px;
-        }
-        @media screen and (max-width: 375px) {
-          width: 356px;
-        }
+        border: 1px solid red;
     }
     .title{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
     }
     .btn-grad {
@@ -67,13 +58,7 @@ body{
 
 
 section[id],article[id]{
-    scroll-margin-top: 60px;
-    @media screen and (max-width: 768px){
-      scroll-margin-top: 80px;
-    }
-    @media screen and (max-width: 375px) {
-      scroll-margin-top: 150px;
-    }
+    scroll-margin-top: 150px;
 }
 
 @-webkit-keyframes slide-top {
