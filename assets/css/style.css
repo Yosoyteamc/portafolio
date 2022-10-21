@@ -41,6 +41,7 @@ body.is__light .navbar__link--icon {
   top: 0;
   width: 100vw;
   z-index: 2;
+  transition: all 0.2s ease;
 }
 .navbar--active ul {
   margin-left: -20px;
