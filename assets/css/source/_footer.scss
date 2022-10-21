@@ -20,20 +20,40 @@
 .socialmedia{
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1000px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
     &-links{
         &__title{
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 15px;
+            @media screen and (min-width: 720px) {
+                text-align: center;
+            }
         }
     }
     &-about{
         width: 335px;
         order: 3;
+        @media screen and (min-width: 720px) {
+            width: 550px;
+            margin: auto;
+        }
+        @media screen and (min-width: 1000px) {
+            margin: 0;
+        }
         &__title{
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 20px;
+            @media screen and (min-width: 720px) {
+                text-align: center;
+            }
+            @media screen and (min-width: 1000px) {
+                text-align: start;
+            }
         }
         &__text{
             line-height: 1.5rem;
@@ -44,6 +64,13 @@
         }
     }
     &-nav{
+        @media screen and (min-width: 720px) {
+            width: 100%;
+            text-align: center;
+        }
+        @media screen and (min-width: 1000px) {
+            width: 150px;
+        }
         order: 1;
         margin-bottom: 50px;
         &__title{
@@ -52,8 +79,19 @@
             margin-bottom: 20px;
         }
         &__items{
+            @media screen and (min-width: 720px) {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            @media screen and (min-width: 1000px) {
+                flex-direction: column;
+            }
             .socialmedia-nav{
                 &__item{
+                    @media screen and (min-width: 720px) {
+                        margin-right: 10px;
+                    }
                     margin: 10px 0;
                 }
                 &__link{
@@ -73,6 +111,9 @@
         justify-content: flex-start;
         order: 2;
         margin-bottom: 30px;
+        @media screen and (min-width: 720px) {
+            justify-content: center;
+        }
         .socialmedia{
             &-link{
                 border-radius: 100%;

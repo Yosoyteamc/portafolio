@@ -10,7 +10,7 @@
 window.onscroll = function() {
   let y = window.scrollY;
   let header = document.querySelector(".navbar");
-  if(y>100){
+  if(y>70){
       header.classList.add("navbar--active");
   }
   else{
