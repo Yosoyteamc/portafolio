@@ -37,14 +37,13 @@
         background-color: $color-bg-opacity;
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
-        left: -8px;
+        left: 0;
         position: fixed;
         top: 0;
         width: 100vw;
         z-index: 2;
         ul{
-            margin: auto;
-            width: 335px;
+            margin-left: -20px;
         }
         body.is__light &{
             background-color: $color-font-opacity;
