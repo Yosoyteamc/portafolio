@@ -72,6 +72,13 @@ section[id],article[id]{
     scroll-margin-top: 100px;
 }
 
+img {
+  -webkit-user-select: none!important;
+  -o-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+}
+
 @-webkit-keyframes slide-top {
     0% {
       -webkit-transform: translateY(0);
